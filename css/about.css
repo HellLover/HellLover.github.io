@@ -1,0 +1,131 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body
+{
+    background: #0a2a43;
+    min-height: 1500px;
+}
+section
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section:before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #0a2a43, transparent);
+    z-index: 10000;
+}
+section:after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #0a2a43;
+    z-index: 10000;
+    mix-blend-mode: color;
+}
+section img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+::-webkit-scrollbar
+{
+  width: 12px;
+}
+::-webkit-scrollbar-thumb
+{
+  background: linear-gradient(transparent,#30ff00);
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover
+{
+  background: linear-gradient(transparent,#00c6ff);
+}
+#text
+{
+    position: relative;
+    color: #fff;
+    font-size: 10em;
+    z-index: 1;
+}
+#road
+{
+    z-index: 2;
+}
+.content
+{
+  padding: 100px;
+  box-sizing: border-box;
+  color: #fff;
+}
+.content p
+{
+    font-size: 4em;
+    color: white;
+}
+.navbar
+{
+  height: 80px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0);
+}
+.logo
+{
+  width: 140px;
+  height: auto;
+  padding: 20px 100px;
+}
+.navbar ul
+{
+  float: right;
+  margin-right: 20px;
+}
+.navbar ul li
+{
+  list-style: none;
+  margin: 0 8px;
+  display: inline-block;
+  line-height: 80px;
+}
+.navbar ul li a
+{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 6px 13px;
+  font-family: 'Roboto', sans-serif;
+  transition: .4s;
+}
+.navbar ul li a.active,
+.navbar ul li a:hover
+{
+  background: red;
+  border-radius: 2px;
+}
+iframe
+{
+  margin-left: 650px;
+  padding-left: 80px;
+}

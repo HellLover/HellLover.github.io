@@ -1,0 +1,123 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body
+{
+  height: 100vh;
+  background: black;
+  align-items: center;
+}
+span
+{
+  position: fixed;
+  pointer-events: none;
+  background: white;
+  animation: animate 2s linear infinite;
+}
+@keyframes animate
+{
+  0%
+  {
+    transform: scale(0) translateY(0) rotate(0deg);
+    opacity: 0;
+  }
+  10%
+  {
+    opacity: 1;
+  }
+  90%
+  {
+    opacity: 1;
+  }
+  100%
+  {
+    transform: scale(1) translateY(-500%) rotate(360deg);
+    opacity: 0;
+  }
+}
+.logo
+{
+  width: 400px;
+  height: auto;
+  padding: 10px 90px;
+}
+.navbar ul
+{
+  float: right;
+  margin-right: 20px;
+}
+.navbar ul li
+{
+  list-style: none;
+  margin: 0 8px;
+  display: inline-block;
+  line-height: 80px;
+}
+.navbar ul li a
+{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 6px 13px;
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  transition: .4s;
+}
+.navbar ul li a.active,
+.navbar ul li a:hover
+{
+  background: red;
+  border-radius: 2px;
+}
+.center
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  user-select: none;
+}
+.center h1
+{
+  color: white;
+  font-size: 70px;
+  font-weight: bold;
+  width: 900px;
+  text-align: center;
+  font-family: cursive;
+}
+.center .buttons
+{
+  margin: 35px 280px;
+}
+.buttons button
+{
+  height: 60px;
+  width: 150px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffb3b3;
+  background: black;
+  border: 1px solid #cc0000;
+  outline: none;
+  cursor: pointer;
+  border-radius: 35px;
+  transition: .4s;
+  font-family: "'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif";
+}
+a
+{
+  text-decoration: none;
+  color: white;
+}
+.buttons .btn
+{
+  margin-left: 25px;
+}
+.buttons button:hover
+{
+  background: #cc0000;
+}

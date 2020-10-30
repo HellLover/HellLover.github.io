@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About</title>
+        <link rel="stylesheet" type="text/css" href="css/about.css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <section>
+            <img src="img/bg.jpg" id="bg">
+            <img src="img/moon.png" id="moon">
+            <img src="img/mountain.png" id="mountain">
+            <img src="img/road.png" id="road">
+            <h2 id="text">Dolphin Bot</h2>
+        </section>
+        <nav class="navbar">
+              <img class="logo" src="img/logo.png">
+              <ul>
+                <li><a class="active" href="#">About</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="https://top.gg/bot/713713873915478036">Vote</a></li>
+              </ul>
+            </nav>
+        <script type="text/javascript">
+            let bg = document.getElementById("bg");
+            let moon = document.getElementById("moon");
+            let mountain = document.getElementById("mountain");
+            let road = document.getElementById("road");
+            let text = document.getElementById("text");
+
+            window.addEventListener('scroll', function() {
+                var value = window.scrollY;
+
+                bg.style.top = value * 0.5 + 'px';
+                moon.style.top = -value * 0.5 + 'px';
+                mountain.style.top = -value * 0.15 + 'px';
+                road.style.top = value * 0.15 + 'px';
+                text.style.top = value * 1 + 'px';
+            })
+        </script>
+            <div class="content">
+          <p><b>Dolphin is a multifunctional bot, made by HellLover. <br>Dolphin has more than 100 commands. <br>Make giveaways, try effects for avatar and image, fun commands, informations, full moderation commands, rank system and NSFW content (Only in NSFW channels). <br>So you can try this bot and invite him. <br>Thank u and GoodLuck :3 </b></p>
+          </div>
+          <iframe src="https://discordapp.com/widget?id=715290558779883532&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+    </body>
+</html>

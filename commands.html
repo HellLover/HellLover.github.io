@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Commands</title>
+
+    <meta charset="utf-8" />
+
+    <link rel="icon" href="assets/DolphinRotate.gif" />
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+
+    <link rel="stylesheet" href="css/cmds.css" type="text/css">
+    <!--
+    <script src="script.js"></script> -->
+
+    <script type="text/javascript" src="js/lib/greensock/TweenMax.min.js"></script>
+    <script type="text/javascript" src="scrollmagic/uncompressed/ScrollMagic.js"></script>
+    <script type="text/javascript" src="scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+    <script src="animations.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121231419-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-121231419-1');
+    </script>
+
+
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="index.html">
+            <img src="assets/DolphinRotate.gif" />
+        </a>
+            <nav>
+              </nav>
+    </header>
+    <h1>  Commands [200+] (Type dol.help to see the full list)</h1>
+    <section id="titlechart">
+        <section class="commands_class">
+            <h1>Moderation Commands [17] (Type <b>dol.help mod</b> for full list)</h1>
+            <section class="flex_items">
+
+                <article>
+                    <h1>ban</h1>
+                    <p> Bans a user from the guild. Permissions: [ BAN_MEMBERS ]</p>
+                </article>
+
+                <article>
+                  <h1>unban</h1>
+                  <p> Unans a user from the guild. Permissions: [ BAN_MEMBERS ]</p>
+              </article>
+
+                <article>
+                    <h1>kick</h1>
+                    <p>Kicks a user from the guild. Permissions: [ KICK_MEMBERS ]</p>
+
+                </article>
+
+                <article>
+                    <h1>mute</h1>
+                    <p>Mutes a user. Permissions: [ MANAGE_ROLES ]</p>
+
+                </article>
+
+                <article>
+                  <h1>unmute</h1>
+                  <p>Unutes a user. Permissions: [ MANAGE_ROLES ]</p>
+
+              </article>
+
+              <article>
+                <h1>tempmute</h1>
+                <p>Mutes a user with specified time. Permissions: [ MANAGE_ROLES ]</p>
+
+            </article>
+
+          </article>
+
+          <article>
+            <h1>clear</h1>
+            <p>Clear messages from channel with specified amount. Permissions: [ MANAGE_MESSAGES ]</p>
+
+        </article>
+
+      </article>
+
+      <article>
+        <h1>addrole</h1>
+        <p>Add role to a specified user. Permissions: [ MANAGE_ROLES ]</p>
+
+    </article>
+
+      <article>
+        <h1>removerole</h1>
+        <p>Remove a role from the specified user. Permissions: [ MANAGE_ROLES ]</p>
+
+     </article>
+
+            </section>
+        </section>
+    </section>
+
+    <div id="trigger1"></div>
+
+    <main>
+        <section class="commands" id="titlechart">
+
+          <section class="commands_class">
+            <h1>Giveaway Commands [6]</h1>
+            <section class="flex_items">
+                    <article>
+                        <h1>gw-create</h1>
+                        <p>Starts a giveaway. Permissions [ Bot: ADD_REACTIONS ], [ User: MANAGE_GUILD ] </p>
+                        <p class="mono">gw-start [time] [winner count] [prize]</p>
+                    </article>
+
+                    <article>
+                        <h1>gw-end</h1>
+                        <p>Ends the giveaway with specified ID. Permissions [ MANAGE_GUILD ]</p>
+                        <p class="mono">gw-end [giveaway ID]</p>
+                    </article>
+
+                    <article>
+                        <h1>gw-delete</h1>
+                        <p>Deletes the giveaway with specified ID. Permissions [ MANAGE_GUILD ]</p>
+                        <p class="mono">gw-delete [giveaway ID]</p>
+                    </article>
+
+                    <article>
+                        <h1>reroll</h1>
+                        <p>Reroll giveaway winners. Permissions [ MANAGE_GUILD ]</p>
+                        <p>reroll [giveaway ID]</p>
+                    </article>
+
+                    <article>
+                        <h1>gw-edit</h1>
+                        <p>Edit the specified giveaway. Permissions [ MANAGE_GUILD ]</p>
+                        <p>gw-edit [giveaway ID] [new timestamp] [new winner count] [new prize]</p>
+                    </article>
+
+                    <article>
+                        <h1>gw-list</h1>
+                        <p>Lists all giveaways, that are running on the guild</p>
+                    </article>
+
+            </section>
+
+            <section class="commands_class" id="titlechart">
+                <h1>Informative Commands [31] (Type <b>dol.help info</b> for full list)</h1>
+                <section class="flex_items">
+                    <article id="trigger_dark_theme">
+                        <h1>userinfo</h1>
+                        <p>Gives information about you, or specified member. </p>
+                        <p class="mono">userinfo [username/user id/mention]</p>
+                    </article>
+
+                    <article>
+                      <h1>serverinfo</h1>
+                      <p>Gives information about you, or specified member. </p>
+                      <p class="mono">userinfo [username/user id/mention]</p>
+                  </article>
+
+
+                    <article>
+                        <h1>channelinfo</h1>
+                        <p>Gives information about specified channel.</p>
+                        <p class="mono">channelinfo [channel ID/mention]</em>
+                    </article>
+
+                    <article>
+                        <h1>botinfo</h1>
+                        <p>Gives information about Dolphin bot.</p>
+                        <p class="mono">botinfo</p>
+                    </article>
+
+                    <article>
+                        <h1>avatar</h1>
+                        <p>Shows your, or other member's avatar.</p>
+                        <p class="mono">avatar [username/user id/mention]</p>
+                    </article>
+
+                    <article>
+                          <h1>npm</h1>
+                          <p>Gives information about specified npm package.</p>
+                          <p class="mono">npm discord.js</p>
+                      </article>
+
+                    <article>
+                        <h1>djs</h1>
+                        <p>Search a query in discord.js official documentation.</p>
+                        <p class="mono">djs client</p>
+                    </article>
+                </section>
+
+
+                <h1>Fun Commands [22] (Type <b>dol.help fun</b> for full list)</h1>
+                <section class="flex_items">
+                    <article>
+                        <h1>math</h1>
+                        <p>Math calculation.</p>
+                        <p class="mono">math 1+2</p>
+                    </article>
+                    <article>
+                        <h1>meme</h1>
+                        <p>Shows a random meme.</p>
+                        <p class="mono">meme</p>
+                    </article>
+
+                    <article>
+                        <h1>ascii</h1>
+                        <p>An ascii art with your text or word.</p>
+                        <p class="mono">ascii Hell World</p>
+                    </article>
+
+                    <article>
+                        <h1>howgay</h1>
+                        <p>Shows how gay you are.</p>
+
+                    </article>
+
+                    <article>
+                      <h1>8ball</h1>
+                      <p>Ask a question and 8ball will answer you.</p>
+
+                  </article>
+
+                </section>
+
+                <h1>Image Commands [56] (Type <b>dol.help img</b> for full list)</h1>
+                <section class="flex_items">
+
+                    <article>
+                        <h1>cat</h1>
+                        <p>Shows a random cute cat image.</p>
+                    </article>
+
+                    <article>
+                        <h1>dog</h1>
+                        <p>Shows a random dog image</p>
+
+                    </article>
+
+                    <article>
+                        <h1>lizard</h1>
+                        <p>Shows a random lizard image. </p>
+
+                    </article>
+
+                    <article>
+                        <h1>goose</h1>
+                        <p>Shows a random goose image</p>
+                    </article>
+
+                    <article>
+                      <h1>gay</h1>
+                      <p>Gay effect for your/other's avatar or for specified image</p>
+                  </article>
+
+                </section>
+
+                <h1>Reaction Commands [10] (Type <b>dol.help reaction</b> for full list)</h1>
+                <section class="flex_items">
+                    <article>
+                        <h1>hug</h1>
+                        <p>Hug someone</p>
+                        <p class="mono">hug [username/ID/mention]</p>
+
+                    </article>
+
+                    <article>
+                      <h1>kiss</h1>
+                      <p>Kiss someone</p>
+                      <p class="mono">kiss [username/ID/mention]</p>
+
+                  </article>
+                  <article>
+                    <h1>slap</h1>
+                    <p>Slap someone</p>
+                    <p class="mono">slap [username/ID/mention]</p>
+
+                </article>
+                <article>
+                  <h1>pat</h1>
+                  <p>Pat someone</p>
+                  <p class="mono">pat [username/ID/mention]</p>
+
+              </article>
+                    <article>
+                      <h1>feed</h1>
+                      <p>Feed someone</p>
+                      <p class="mono">feed [username/ID/mention]</p>
+
+                  </article>
+
+                </section>
+
+                <h1>NSFW Commands [20] (Type <b>dol.help nsfw</b> for full list)</h1>
+                <section class="flex_items">
+
+                    <article>
+                        <h1>neko</h1>
+                        <p>Random neko image.</p>
+
+                    </article>
+
+                    <article>
+                        <h1>tits</h1>
+                        <p>Random tits image or gif.</p>
+
+                    </article>
+
+                    <article>
+                        <h1>anal</h1>
+                        <p>Random anal porn image or gif.</p>
+
+                    </article>
+
+                    <article>
+                        <h1>pussy</h1>
+                        <p>Random pussy image or gif.</p>
+
+                    </article>
+
+                    <article>
+                        <h1>hentai</h1>
+                        <p>Random hentai image or gif.</p>
+
+                    </article>
+
+                </section>
+
+                <h1>Games [9]</h1>
+                <section class="flex_items">
+
+                    <article>
+                        <h1>minesweeper</h1>
+                        <p>Minesweeper game</p>
+                    </article>
+
+                    <article>
+                        <h1>ttt</h1>
+                        <p>Tictatoe game.</p>
+
+                    </article>
+
+                    <article>
+                        <h1>jumble</h1>
+                        <p>Jumble Word game</p>
+
+                    </article>
+
+                    <article>
+                        <h1>guess</h1>
+                        <p>Guess the number game.</p>
+                    </article>
+
+                    <article>
+                        <h1>soccer</h1>
+                        <p>Soccer game.</p>
+                    </article>
+
+                    <article>
+                      <h1>rps</h1>
+                      <p>Rock Paper Scissors game.</p>
+                  </article>
+
+                  <article>
+                    <h1>snake</h1>
+                    <p>Snake game.</p>
+                </article>
+
+                <article>
+                    <h1>akinator</h1>
+                    <p>Akinator game</p>
+                </article>
+
+                <article>
+                    <h1>hangman</h1>
+                    <p>Hangman game</p>
+                </article>
+
+                </section>
+                <h1>Settings [10]</h1>
+                <section class="flex_items">
+
+                    <article>
+                        <h1>auditlog</h1>
+                        <p>Set a channel for audit-log. Permissions [ MANAGE_GUILD ]</p>
+                    </article>
+
+                    <article>
+                        <h1>autorole</h1>
+                        <p>Set a role for new members to give them. Permissions [ MANAGE_GUILD ]</p>
+
+                    </article>
+
+                    <article>
+                        <h1>leave</h1>
+                        <p>Leave messages channel. Permissions [ MANAGE_GUILD ]</p>
+
+                    </article>
+
+                    <article>
+                        <h1>welcome</h1>
+                        <p>Welcome messages channel. Permissions [ MANAGE_GUILD ]</p>
+                    </article>
+
+                    <article>
+                        <h1>setprefix</h1>
+                        <p>Change Dolphin's prefix for your server. Permissions [ MANAGE_GUILD ]</p>
+                    </article>
+
+                    <article>
+                      <h1>config</h1>
+                      <p>Configuration of your server. Permissions [ MANAGE_GUILD ]</p>
+                  </article>
+
+                  <article>
+                    <h1>suggestchannel</h1>
+                    <p>Channel for suggestions. (dol.suggest [idea]). Permissions [ MANAGE_GUILD ]</p>
+                </article>
+
+                </section>
+                <h1>Leveling [11]</h1>
+                <section class="flex_items">
+
+                    <article>
+                        <h1>rank</h1>
+                        <p>Shows your rank card</p>
+                    </article>
+
+                    <article>
+                        <h1>leaderboard</h1>
+                        <p>Server leaderboard of most ranked users.</p>
+
+                    </article>
+
+                    <article>
+                        <h1>setxp</h1>
+                        <p>Set xp for specified user. Permissions [ OWNER ]</p>
+
+                    </article>
+
+                    <article>
+                        <h1>setlevel</h1>
+                        <p>Set level for specified user. Permissions [ OWNER ]</p>
+                    </article>
+
+                    <article>
+                        <h1>setbg</h1>
+                        <p>Change your rank card background image.</p>
+                    </article>
+
+                </section>
+            </section>
+    </main>
+
+    <footer>
+        <p>
+            <small> &copy; Owners [HellLover#0007, Kurays#2020]. </small>
+        </p>
+
+    </footer>
+</body>
+
+</html>
